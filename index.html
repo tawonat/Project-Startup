@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reservation Confirmed</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Cantina Senai</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Seu lugar foi reservado!</h1>
-    <p>Obrigado por nos escolher.</p>
-    <p>Número do assento:    </p>
-    <button id="next-button">Next</button>
-  </div>
-  <script>
-    const button = document.getElementById('next-button');
-    button.addEventListener('click', () => {
-      window.location.href = "index.html";
-    });
-  </script>
+    <div class="container">
+        <h1>Cadastro</h1>
+
+        <form action="#">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+            </div>
+
+            <div class="form-group">
+                <label for="unidade">Unidade:</label>
+                <select id="unidade" name="unidade" required>
+                    <option value="">Selecione a Unidade</option>
+                    <option value="unidade1">Senai Shunji Nishimura</option>
+                    <option value="unidade2">Unidade 2</option>
+                    <option value="unidade3">Unidade 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmarSenha">Confirmar Senha:</label>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+            </div>
+
+            <button class="submit">Cadastrar</button>
+        </form>
+    </div>
 </body>
 </html>
-
-
