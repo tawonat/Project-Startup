@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cantina SENAI - Bem Vindo!</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Confirmed</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="retangulo-vermelho"></div>
-
-    <h1>Bem vindo a Cantina SENAI!</h1>
-
-    <div class="container-botoes">
-        <button class="botao">
-            <img src="./talheres.png" alt="Cantina">
-            CANTINA
-        </button>
-        <button class="botao">
-            <img src="./cardapio.png" alt="Cardápio">
-            CARDÁPIO
-        </button>
-        <button class="botao">
-            <img src="./encontro.png" alt="Mesas">
-            MESAS
-        </button>
-        <button class="botao">
-            <img src="./alerta.png" alt="Reclamações">
-            RECLAMAÇÕES
-        </button>
-    </div>
-
-    <div class="fundo-imagem"></div>
+  <div class="container">
+    <h1>Seu lugar foi reservado!</h1>
+    <p>Obrigado por nos escolher.</p>
+    <p>Número do assento:    </p>
+    <button id="next-button">Next</button>
+  </div>
+  <script>
+    const button = document.getElementById('next-button');
+    button.addEventListener('click', () => {
+      window.location.href = "index.html";
+    });
+  </script>
 </body>
 </html>
+
+
