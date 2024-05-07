@@ -1,4 +1,6 @@
 /* style.css */
+
+
 .tables-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,11 +10,12 @@
 .table {
     display: inline-block;
     margin: 20px;
-    width: 200px;
+    width: 180px;
     height: 100px;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
+    background-color: #ffffff;
 }
 
 .table-header {
@@ -36,5 +39,26 @@
 }
 
 .chair.reserved {
-    background-color: #ff9999;
+    background-color: #c21d1d;
 }
+
+.titulo {
+    text-align: center;
+}
+
+#confirmarButton {
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 200px;
+  }
+  body {
+    background-color: #c23f3f;
+  }
+
+  h1 {
+    color: white;
+    font-size: 80px;
+  }

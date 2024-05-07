@@ -5,7 +5,7 @@ for (let i = 1; i <= 11; i++) {
     const table = document.createElement('div');
     table.className = 'table';
     table.innerHTML = `
-        <div class="table-header">Table ${i}</div>
+        <div class="table-header">Mesa ${i}</div>
         <div class="chairs">
             ${Array(5).fill('').map((_, index) => `
                 <div class="chair available" data-chair="${index + 1}"></div>
