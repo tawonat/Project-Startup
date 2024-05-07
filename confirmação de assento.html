@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Confirmed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Seu lugar foi reservado!</h1>
+    <p>Obrigado por nos escolher.</p>
+    <p>Número do assento:    </p>
+    <button id="next-button">Next</button>
+  </div>
+  <script>
+    const button = document.getElementById('next-button');
+    button.addEventListener('click', () => {
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
+
+
