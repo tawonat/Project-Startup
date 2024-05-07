@@ -1,12 +1,33 @@
-// Função para marcar um assento como ocupado
-function marcarAssento(assento) {
-    assento.classList.add("ocupado");
+// script.js
+const tablesContainer = document.querySelector('.tables-container');
+
+for (let i = 1; i <= 11; i++) {
+    const table = document.createElement('div');
+    table.className = 'table';
+    table.innerHTML = `
+        <div class="table-header">Table ${i}</div>
+        <div class="chairs">
+            ${Array(5).fill('').map((_, index) => `
+                <div class="chair available" data-chair="${index + 1}"></div>
+            `).join('')}
+            ${Array(5).fill('').map((_, index) => `
+                <div class="chair available" data-chair="${index + 6}"></div>
+            `).join('')}
+        </div>
+    `;
+    tablesContainer.appendChild(table);
 }
 
-// Adicionar evento de clique aos assentos
-const assentos = document.querySelectorAll(".assento");
-assentos.forEach(assento => {
-    assento.addEventListener("click", () => {
-        marcarAssento(assento);
+const chairs = document.querySelectorAll('.chair');
+
+chairs.forEach((chair) => {
+    chair.addEventListener('click', () => {
+        if (chair.classList.contains('available')) {
+            chair.classList.remove('available');
+            chair.classList.add('reserved');
+        } else {
+            chair.classList.remove('reserved');
+            chair.classList.add('available');
+        }
     });
 });
