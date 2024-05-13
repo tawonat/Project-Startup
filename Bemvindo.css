@@ -1,16 +1,81 @@
-.pato{text-align: center;
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    /* cor do fundo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
-background-color: rgb(191, 17, 17);
-font-family: arial;
-text-shadow: 20%;
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #af1e1e;
+    /* cor do h1 */
 }
-h1 {color: antiquewhite;
+
+img{
+    width: 50px;
 }
-h3 {font-family: Arial;
-text-align: center;}
-text {text-decoration: line-through;}
-.vaca{text-align: center;
+/* tamanho das imagens dos botões */
+
+.container-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-.log{font-family: Arial;
-text-align: center;}
-.fundo{background-image: -moz-element();}
+
+.botao {
+    background-color: #af1e1e; 
+    /* cor do fundo do botão */
+    border: none;
+    color: rgb(255, 255, 255);
+    /* cor de cima é a cor da letra */
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* transition: background-color 0.3s ease; */
+}
+
+.botao:hover {
+    background-color: #270505; 
+    /* cor do botão quando coloca o mouse em cima */
+}
+
+.botao img {
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    vertical-align: middle; /* Alinhar imagem na vertical com o texto */
+}
+
+.retangulo-vermelho {
+    position: fixed; /* Fixar o retângulo no topo da tela */
+    top: 0; /* Posição superior */
+    left: 0; /* Posição esquerda */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 50px; /* Altura do retângulo */
+    background-color:#af1e1e 
+    /* Cor vermelha */
+}
+
+.fundo-imagem {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/vetores-premium/plano-de-fundo-padrao-de-comida-e-bebida_554445-963.jpg"); /* Caminho para sua imagem */
+    background-repeat: repeat; /* Repetir a imagem em todas as direções */
+    background-size: 500px; /* Cobertura total da tela */
+    opacity: 0.1; /* Transparência de 10% */
+}
