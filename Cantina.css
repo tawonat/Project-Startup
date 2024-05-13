@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: rgb(250, 218, 176);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  -webkit-text-fill-color: rgb(7, 6, 6);
+}
+
+.itens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  -webkit-text-fill-color: rgb(17, 16, 15);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #901c14;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  
+}
+
+.titulo {
+  font-weight: bold;
+  -webkit-text-fill-color: rgb(233, 189, 132);
+}
+
+input[type="number"] {
+  width: 40px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+#confirmarButton {
+  background-color: rgb(145, 7, 7);
+  color: white;
+  -webkit-text-fill-color: aliceblue;
+  position: absolute;
+  left: 80%;
+  transform: translateX(-80%) translateY(3600%);
+
+}
+
+
+
+
