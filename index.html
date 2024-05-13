@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Screen</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+		<h1>Pagamentos</h1>
+		<progress id="payment-progress" value="0" max="100"></progress>
+		<form id="Pagamentos">
+			<label for="numero do cartao">Numero do cartão:</label>
+			<input type="text" id="card-number" name="card-number">
+			
+            <label for="senha">Senha:</label>
+			<input type="text" id="expiration-date" name="expiration-date">
+			<label for="validade">Validade:</label>
+			<input type="text" id="cvv" name="cvv">
+			<button type="submit">Pague agora</button>
+		</form>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
