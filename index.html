@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Payment Screen</title>
+	<title>Complaints Website</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<header>
-		
-	</header>
-	<main>
-		<h1>Pagamentos</h1>
-		<progress id="payment-progress" value="0" max="100"></progress>
-		<form id="Pagamentos">
-			<label for="numero do cartao">Numero do cartão:</label>
-			<input type="text" id="card-number" name="card-number">
-			
-            <label for="senha">Senha:</label>
-			<input type="text" id="expiration-date" name="expiration-date">
-			<label for="validade">Validade:</label>
-			<input type="text" id="cvv" name="cvv">
-			<button type="submit">Pague agora</button>
+	<div class="container">
+		<h1>Reclame aqui</h1>
+		<form action="/reclame aqui" method="post">
+			<div class="form-field">
+				<label for="nome">Nome:</label>
+				<input type="text" id="name" name="name" required autocomplete="off">
+			</div>
+			<div class="form-field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required autocomplete="off">
+			</div>
+			<div class="form-field">
+				<label for="escreva aqui">Escreva aqui:</label>
+				<textarea id="complaint" name="complaint" rows="4" cols="50" required autocomplete="off"></textarea>
+                
+			</div>
+			<button type="submit">Enviar</button>
 		</form>
-	</main>
-	<script src="script.js"></script>
+	</div>
 </body>
 </html>
