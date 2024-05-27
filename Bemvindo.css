@@ -69,13 +69,13 @@ img{
 }
 
 .fundo-imagem {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url("https://img.freepik.com/vetores-premium/plano-de-fundo-padrao-de-comida-e-bebida_554445-963.jpg"); /* Caminho para sua imagem */
-    background-repeat: repeat; /* Repetir a imagem em todas as direções */
+    background-repeat: repeat; 
     background-size: 500px; /* Cobertura total da tela */
     opacity: 0.1; /* Transparência de 10% */
 }

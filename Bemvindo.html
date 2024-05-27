@@ -12,24 +12,50 @@
     <h1>Bem vindo a Cantina SENAI!</h1>
 
     <div class="container-botoes">
-        <button class="botao">
+        <button onclick="irparatela()" class="botao"> 
             <img src="./talheres.png" alt="Cantina">
             CANTINA
         </button>
-        <button class="botao">
+
+        <button onclick="irparatela2()" class="botao"> 
             <img src="./cardapio.png" alt="Cardápio">
             CARDÁPIO
         </button>
-        <button class="botao">
+
+        <button onclick="irparatela3()" class="botao"> 
             <img src="./encontro.png" alt="Mesas">
             MESAS
         </button>
-        <button class="botao">
+
+        <button onclick="irparatela4()" class="botao"> 
             <img src="./alerta.png" alt="Reclamações">
             RECLAMAÇÕES
         </button>
+
     </div>
 
     <div class="fundo-imagem"></div>
+
+    <script>
+        function irparatela() {
+            console.log("esta entrando")
+            window.location.href="Cantina.html"
+        }
+
+            function irparatela2() {
+            console.log("esta entrando")
+            window.location.href="cardapio.html"
+            }
+
+            function irparatela3() {
+            console.log("esta entrando")
+            window.location.href="mesas.html"
+            }
+
+            function irparatela4() {
+            console.log("esta entrando")
+            window.location.href="Reclamação.html"
+        } 
+    </script>
 </body>
 </html>
