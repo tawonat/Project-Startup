@@ -1,47 +1,56 @@
-/* Basic styling */
 body {
-  font-family: sans-serif;  /* Change this to a font you like */
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: rgb(250, 218, 176);
 }
 
 header {
-  background-color: #9d1414;
-  padding: 15px;
-}
-
-h1 {
   text-align: center;
 }
 
-main {
-  padding: 60px;
+h1 {
+  font-size: 4em;
+  -webkit-text-fill-color: rgb(7, 6, 6);
 }
 
-section {
-  background-color: rgb(213, 178, 135);
-  border: 5px solid #470707;
-  padding: 10px;
-  margin-bottom: 15px;
+.itens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  -webkit-text-fill-color: rgb(17, 16, 15);
 }
 
-h2 {
-  margin-top: 0;
-}
-
-/* Styling for the item elements */
 .item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7px;
+  align-items: center;
+  background-color: #901c14;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  
 }
 
-.item span.titulo {
-  width: 50%;
+.titulo {
+  font-weight: bold;
+  -webkit-text-fill-color: rgb(233, 189, 132);
 }
 
-.item input[type="number"] {
-  width: 40%;
-  border: 1px solid #840707;
-  padding: 7px;
+input[type="number"] {
+  width: 40px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+#confirmarButton {
+  background-color: rgb(145, 7, 7);
+  color: white;
+  -webkit-text-fill-color: aliceblue;
+  position: absolute;
+  left: 80%;
+  transform: translateX(-80%) translateY(3600%);
+
 }
