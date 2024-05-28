@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pagamento</h1>
+    </header>
+    <main>
+        <section class="payment-method">
+            <h2>Selecione o método de pagamento</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="credit-card" name="payment-method">
+                    <label for="credit-card">Cartão de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="paypal" name="payment-method">
+                    <label for="paypal">PayPal</label>
+                </li>
+                <li>
+                    <input type="radio" id="bank-transfer" name="payment-method">
+                    <label for="bank-transfer">Transferência Bancária</label>
+                </li>
+            </ul>
+        </section>
+        <section class="payment-details">
+            <h2>Detalhes do pagamento</h2>
+            <form>
+                <label for="card-number">Número do cartão</label>
+                <input type="text" id="card-number" name="card-number">
+                <label for="expiration-date">Data de validade</label>
+                <input type="text" id="expiration-date" name="expiration-date">
+                <label for="security-code">Código de segurança</label>
+                <input type="text" id="security-code" name="security-code">
+                <label for="cardholder-name">Nome do titular</label>
+                <input type="text" id="cardholder-name" name="cardholder-name">
+            </form>
+        </section>
+        <section class="total-amount">
+            <h2>Total a pagar</h2>
+            <p>R$ 100,00</p>
+        </section>
+        <button class="pay-now">Pagar agora</button>
+        
+    </main>
+    <footer>
+        <p>© 2023 [Company Name]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
