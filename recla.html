@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complaints Website</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Reclame aqui</h1>
+		<form action="/reclame aqui" method="post">
+			<div class="form-field">
+				<label for="nome">Nome:</label>
+				<input type="text" id="name" name="name" required autocomplete="off">
+			</div>
+			<div class="form-field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required autocomplete="off">
+			</div>
+			<div class="form-field">
+				<label for="escreva aqui">Escreva aqui:</label>
+				<textarea id="complaint" name="complaint" rows="4" cols="50" required autocomplete="off"></textarea>
+                
+			</div>
+		</form>
+		<button onclick="alert('OBRIGADO')">Enviar</button>
+
+<script>
+  const button = document.createElement('button');
+  button.textContent = '';
+  document.body.appendChild(button);
+
+  button.addEventListener('click', () => {
+    alert('OBRIGADO');
+  });
+</script>
+
+	</div>
+</body>
+</html>
