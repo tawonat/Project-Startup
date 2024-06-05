@@ -44,8 +44,16 @@
                 <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
             </div>
 
-            <button class="submit">Cadastrar</button>
+            <button onclick="irparalogin()" class="botao">Cadastrar</button>
         </form>
+    </div>
+    <div>
+        <script>
+            function irparalogin() {
+            console.log("esta entrando")
+            window.location.href="login.html"
+            }
+        </script>
     </div>
 </body>
 </html>
