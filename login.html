@@ -11,28 +11,30 @@
     <h1>Login</h1>
     <form action="#">  <div class="input-field">
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <input type="email" name="email" id="email" placeholder="Coloque seu email">
       </div>
       <div class="input-field">
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" placeholder="Coloque sua senha">
       </div>
       <div class="input-field">
-        <label for="drive">unit:</label>
-        <input type="text" name="drive" id="drive" placeholder="Enter your drive" required>
+        <label for="drive">Unidade:</label>
+        <input type="text" name="drive" id="drive" placeholder="Coloque sua unidade" required>
       </div>
       <div class="button-container">
-        <a href="Bemvindo.html"><button type="submit">Enter</button></a>
+        <button onclick="irparabemvindo()" class="botao">Entrar</button>
     
-        <a href="cadastro.html"><button type="button">Sign Up</button></a>
+        <a href="cadastro.html"><button type="button">Cadastrar</button></a>
       </div>
     </form>
   </div>
   <div>
     <script>
-       function irparalogin() {
-            console.log("esta entrando")
-            window.location.href="login.html"
+       function irparabemvindo() {
+        var e= window.document.getElementById('email')
+        var p= window.document.getElementById('password')
+        var d= window.document.getElementById('drive')
+            e(window.location.href="Bemvindo.html")
         } 
     </script>
   </div>
