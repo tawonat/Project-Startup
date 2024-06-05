@@ -39,3 +39,10 @@ body {
     background-color: #a02a1b;
   }
   
+.botao {
+  background-color: #a02a1b;
+  border-radius: 5px;
+  height: 40px;
+  width: 90px;
+  border: none;
+}

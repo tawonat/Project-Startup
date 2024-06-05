@@ -8,10 +8,11 @@
 </head>
 <body>
   <div class="container">
-    <h1>Seu lugar foi reservado!</h1>
-    <p>Obrigado por nos escolher.</p>
-    <p>Número do assento:    </p>
-    <button id="next-button">Next</button>
+    <h1>Seu lugar foi reservado.</h1>
+    <p>Obrigado por nos escolher!</p>
+    <p>Número da mesa: 9 </p>
+    <p>Número do assento: 5 </p>
+    <button onclick="jareservou()" class="botao">Continuar</button>
   </div>
   <script>
     const button = document.getElementById('next-button');
@@ -20,6 +21,14 @@
     });
   </script>
 </body>
+<div>
+  <script>
+function jareservou() {
+            console.log("esta entrando")
+            window.location.href="Bemvindo.html"
+        }
+  </script>
+</div>
 </html>
 
 
