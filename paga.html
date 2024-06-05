@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="paga.css">
 </head>
 <body>
     <header>
@@ -43,13 +44,22 @@
         </section>
         <section class="total-amount">
             <h2>Total a pagar</h2>
-            <p>R$ 100,00</p>
+            <p>R$ 24,00</p>
         </section>
-        <button class="pay-now">Pagar agora</button>
-        
+        <div>
+        <input type="button" value="Pague já" id="botao" onclick="voltar()">
+    </div>
     </main>
     <footer>
-        <p>© 2023 [Company Name]. Todos os direitos reservados.</p>
+        <p>© 2024 [Cantina Senai]. Todos os direitos reservados.</p>
     </footer>
 </body>
+<div>
+    <script>
+        function voltar() {
+            console.log("esta entrando")
+            window.location.href="Bemvindo.html"
+        }
+    </script>
+</div>
 </html>
